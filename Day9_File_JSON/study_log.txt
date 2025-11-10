@@ -1,0 +1,2 @@
+Scott studied Python basics today.
+He learned about variables, loops, and conditions.
