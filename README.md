@@ -54,5 +54,5 @@ This repository documents my **2-month Cloud Support / Junior DevOps** learning 
 
 ---
 
-📌 *Repository maintained by Scott Yang (杨学儒) — based in Auckland, New Zealand*  
+📌 *Repository maintained by Scott Yang — based in Auckland, New Zealand*  
 📧 Contact: [linkedin.com/in/scottyangnz](https://linkedin.com/in/scottyangnz)
