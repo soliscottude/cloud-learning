@@ -22,6 +22,7 @@ pip3 install boto3
 import boto3
 
 s3 = boto3.client('s3')
+
 response = s3.list_buckets()
 
 print("✅ Your S3 Buckets:")
@@ -46,6 +47,7 @@ scottyang-test-bucket
 import boto3
 
 s3 = boto3.client('s3')
+
 bucket_name = "scott-boto3-demo-bucket"
 
 try:
