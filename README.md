@@ -10,7 +10,7 @@ This repository documents my **2-month Cloud Support / Junior DevOps** learning 
 |-----|--------|--------------|---------|
 | 1–2 | IAM / EC2 | Created AWS account, set up IAM users, launched first EC2 instance | ✅ Completed |
 | 3–5 | S3 Static Website | Deployed and hosted a static website on Amazon S3 | ✅ Completed |
-| 6 | CloudFront + Route 53 | CDN and domain setup (pending account verification) | ⏳ Pending |
+| 6 | CloudFront + Route 53 | CDN and domain setup (pending account verification) | ✅ Completed |
 | 7 | Documentation | Uploaded screenshots and notes to GitHub | ✅ Completed |
 
 ---
