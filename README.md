@@ -1,7 +1,7 @@
 # 🌩️ Cloud Support Learning Journey  
 
-This repository documents my **2-month Cloud Support / Junior DevOps** learning progress — covering AWS, Python automation, Docker, CI/CD, and Cloud monitoring.  
-*(Currently progressing from Day 10 onward — accelerated plan)*  
+This repository documents my 2-month Cloud Support / Junior DevOps learning progress — covering AWS, Python automation, Docker, CI/CD, and Cloud monitoring.
+(Currently progressing through Day 14 – CloudWatch Monitoring & Linux Essentials)
 
 ---
 
@@ -21,14 +21,14 @@ This repository documents my **2-month Cloud Support / Junior DevOps** learning 
 | 8 | Python Basics | Variables, loops, input, and calculations | ✅ Completed |
 | 9 | File & JSON Handling | File operations and JSON serialization | ✅ Completed |
 | 10 | boto3 Connection | Connect to AWS via boto3 (list S3 buckets, EC2 instances) | ✅ Completed |
-| 11–14 | Automation + Logging | Automate EC2 start/stop, S3 uploads with error handling and logs | 🚀 In Progress |
+| 11–14 | Automation + Logging | Automate EC2 start/stop, S3 uploads with error handling and logs | ✅ Completed |
 
 ---
 
 ## 🐳 Docker & CI/CD (Upcoming)
 | Day | Topic | Description | Status |
 |-----|--------|--------------|---------|
-| 15–19 | Docker + GitHub Actions | Containerize Python project and set up CI/CD deployment pipeline | ⏳ Planned |
+| 15–19 | Docker + GitHub Actions | Containerize Python project and set up CI/CD deployment pipeline | 🚀 In Progress |
 
 ---
 
@@ -37,12 +37,6 @@ This repository documents my **2-month Cloud Support / Junior DevOps** learning 
 |-----|--------|--------------|---------|
 | 20–24 | CloudWatch & Linux | CloudWatch alarms + Linux system monitoring | ⏳ Planned |
 | 25–28 | Certification & Portfolio | AWS Practitioner review and mock interview prep | ⏳ Planned |
-
----
-
-## 🗂️ Next Steps
-- [ ] Configure CI/CD deployment pipeline  
-- [ ] Add screenshots, logs, and final summary report  
 
 ---
 
