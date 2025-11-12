@@ -37,11 +37,7 @@ docker build -t aws_automation:v1 .
 
 ### 2️⃣ Run the Container (with AWS credentials)
 ```
-docker run --rm --name automation-demo \
-  -v ~/.aws:/root/.aws:ro \
-  -e AWS_PROFILE=default \
-  -e AWS_DEFAULT_REGION=ap-southeast-2 \
-  aws_automation:v1
+docker run --rm --name automation-demo -v ~/.aws:/root/.aws:ro -e AWS_PROFILE=default -e AWS_DEFAULT_REGION=ap-southeast-2 aws_automation:v1
 ```
 
 ### ✅ Output example:
