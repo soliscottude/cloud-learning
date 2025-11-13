@@ -1,8 +1,12 @@
 import boto3
 import logging
+import os
 from botocore.exceptions import ClientError
 
-aws_management_console = boto3.session.Session(profile_name='default')
+aws_management_console = boto3.session.Session(
+    region_name=os.getenv("AWS_DEFAULT_REGION", "ap-southeast-2")
+
+)
 ec2 = aws_management_console.resource('ec2')
 s3 = aws_management_console.resource('s3')
 
@@ -100,7 +104,26 @@ def upload_file(file_path, bucket_name, object_key = None):
 # Run the functions
 
 if __name__ == "__main__":
-    target_instance = "i-0d0c06486b6e1b27d"
-    #start_instance(target_instance)
-    stop_instance(target_instance)
-    #upload_file('test.txt', 'scott-boto3-demo-bucket')
+    instance_id = os.getenv("INSTANCE_ID")
+    bucket_name = os.getenv("BUCKET_NAME")
+    file_path = os.getenv("FILE_PATH")
+
+    # --- EC2 Start ---
+    if instance_id and os.getenv("START_INSTANCE") == "1":
+        # start_instance(instance_id)
+        print(f"[INFO] (Simulation) Starting EC2 instance: {instance_id}")
+
+    # --- EC2 Stop ---
+    if instance_id and os.getenv("STOP_INSTANCE") == "1":
+        # stop_instance(instance_id)
+        print(f"[INFO] (Simulation) Stopping EC2 instance: {instance_id}")
+
+    # --- S3 Upload ---
+    if bucket_name and file_path and os.getenv("UPLOAD_FILE") == "1":
+        # upload_file(file_path, bucket_name)
+        print(f"[INFO] (Simulation) Uploading {file_path} → {bucket_name}")
+
+    if not any([instance_id, bucket_name]):
+        print("No operations requested. Set environment variables to run AWS actions.")
+
+    print("AWS actions are commented out for safety.")

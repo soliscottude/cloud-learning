@@ -37,15 +37,17 @@ docker build -t aws_automation:v1 .
 
 ### 2️⃣ Run the Container (with AWS credentials)
 ```
-docker run --rm --name automation-demo -v ~/.aws:/root/.aws:ro -e AWS_PROFILE=default -e AWS_DEFAULT_REGION=ap-southeast-2 aws_automation:v1
+docker run --rm --name automation-demo -v ~/.aws:/root/.aws:ro -e AWS_PROFILE=default -e AWS_DEFAULT_REGION=ap-southeast-2 soliscottude/aws-automation:v2
 ```
 
 ### ✅ Output example:
 ```
-EC2: i-0d0c06486b6e1b27d stopped MySecondEC2
-S3: scott-boto3-demo-bucket
-S3: scott-static-site-demo
-S3: scottyang-test-bucket
+EC2:  i-0d0c06486b6e1b27d stopped MySecondEC2
+S3:  scott-boto3-demo-bucket
+S3:  scott-static-site-demo
+S3:  scottyang-test-bucket
+[INFO] (Simulation) Starting EC2 instance: i-0d0c06486b6e1b27d
+AWS actions are commented out for safety.
 ```
 
 ## 🧰 Container Management
@@ -68,10 +70,10 @@ docker rm -f automation-demo
 docker images
 
 # Remove specific image
-docker rmi aws_automation:v1
+docker rmi aws-automation:v1
 
 # Remove multiple images at once
-docker rmi aws_automation:v1 nginx:trixie-perl
+docker rmi aws-automation:v1 nginx:trixie-perl
 
 # Clean up dangling intermediate layers
 docker image prune -f
